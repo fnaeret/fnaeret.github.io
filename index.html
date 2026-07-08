@@ -12,100 +12,40 @@
     <nav class="navbar" aria-label="Primary">
         <div class="nav-container">
             <div class="logo">FNAE Reverse-Engineering Team</div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#goals">Goals</a>
-                <a href="#progress">Progress</a>
-            </div>
-        </div>
     </nav>
 
     <header class="hero">
         <div class="container">
-            <h1>Preserving the game.<br>Porting the code.</h1>
-            <p>An open-source reverse engineering initiative dedicated to decompiling, documenting, and porting <em>Five Nights at Epstein's</em>.</p>
+            <h1>Preserving the game.</h1>
+            <p>An open source project to decompile and preserve <em>Five Nights at Epstein's</em>.</p>
             <div class="hero-buttons">
-                <a href="#progress" class="btn btn-primary">View Progress</a>
-                <a href="https://github.com/fnaeret" class="btn btn-secondary">Source Code</a>
+                <a href="https://github.com/fnaeret" class="btn btn-primary">GitHub</a>
             </div>
         </div>
     </header>
 
     <main class="container">
-        
-        <!-- About & Goals Section -->
+
         <section id="about" class="grid-layout">
             <div class="card">
                 <h2>Project Overview</h2>
-                <p>Five Nights at Epstein's was a viral meme game that was quickly scrubbed from the internet. We are archiving it properly by reverse-engineering the logic, ripping the original assets, and rewriting the core mechanics.</p>
-                <p>This ensures the game remains playable, moddable, and preserved without relying on the original, bloated executable.</p>
+                <p>Five Nights at Epstein's is a FNAF fan game released on itch.io in January 2026. Built in Unity by an anonymous developer, it swaps the animatronics for figures tied to the Epstein case and drops the player on Epstein Island. The game went viral on TikTok and YouTube through February 2026 before the creator pulled it from itch.io later that month. This project decompiles the original build and documents what remains.</p>
             </div>
 
-            <div class="card" id="goals">
+            <div class="card">
                 <h2>Technical Goals</h2>
                 <ul class="goal-list">
                     <li>
-                        <strong>Engine Replacement</strong>
-                        <span>Moving from Unity to a lightweight, custom game engine.</span>
-                    </li>
-                    <li>
-                        <strong>Cross-Platform</strong>
-                        <span>Native support for Windows, Linux, macOS, and WebAssembly.</span>
-                    </li>
-                    <li>
                         <strong>Asset Preservation</strong>
-                        <span>Extracting and documenting all models, textures, and audio.</span>
+                        <span>Extracting models, textures, audio, and other game data and saving them in open formats.</span>
+                    </li>
+                    <li>
+                        <strong>Full Documentation</strong>
+                        <span>Annotating each reversed function and data structure so the codebase stays readable.</span>
                     </li>
                 </ul>
             </div>
         </section>
-
-        <!-- Progress Section -->
-        <section id="progress" class="progress-section">
-            <h2>Current Status</h2>
-            <div class="card">
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <span>Assembly Decompilation</span>
-                        <span>15%</span>
-                    </div>
-                    <div class="bar-background">
-                        <div class="bar-fill" data-width="15%"></div>
-                    </div>
-                </div>
-
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <span>Asset Extraction</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="bar-background">
-                        <div class="bar-fill" data-width="90%"></div>
-                    </div>
-                </div>
-
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <span>Engine Rewrite</span>
-                        <span>5%</span>
-                    </div>
-                    <div class="bar-background">
-                        <div class="bar-fill" data-width="5%"></div>
-                    </div>
-                </div>
-
-                <div class="progress-item">
-                    <div class="progress-header">
-                        <span>Platform Porting</span>
-                        <span>2%</span>
-                    </div>
-                    <div class="bar-background">
-                        <div class="bar-fill" data-width="2%"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <footer>
@@ -115,6 +55,5 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
