@@ -12,14 +12,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // Simple animation to fill the progress bars on load
+    // Progress bar fill
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const progressBars = document.querySelectorAll('.bar-fill');
-    
-    // Slight delay so the user sees the animation after the page renders
+
+    const delay = prefersReducedMotion ? 0 : 200;
+
     setTimeout(() => {
         progressBars.forEach(bar => {
             const targetWidth = bar.getAttribute('data-width');
-            bar.style.width = targetWidth;
+            const scale = parseFloat(targetWidth) / 100;
+            bar.style.transform = 'scaleX(' + scale + ')';
         });
-    }, 200);
+    }, delay);
 });
